@@ -1,0 +1,10 @@
+         Prezzo_Init	         Percentuale	        Prezz |	         Prezzo_Init	         Percentuale	        Prezz
+             2000.00	               12.00	              \	             2000.00	               12.00	             
+         Prezzo_Init	         Percentuale	     Prezzo_s |	         Prezzo_Init	         Percentuale	     Prezzo_s
+             3000.00	               25.00	              \	             3000.00	               25.00	             
+invalid input						      \	invalid input
+invalid input						      \	invalid input
+         Prezzo_Init	         Percentuale	     Prezzo_s |	         Prezzo_Init	         Percentuale	     Prezzo_s
+             3000.00	               25.00	              \	             3000.00	               25.00	             
+invalid input						      \	invalid input
+invalid input						      \	invalid input

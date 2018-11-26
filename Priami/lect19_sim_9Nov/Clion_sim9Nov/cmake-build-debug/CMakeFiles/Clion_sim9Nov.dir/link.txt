@@ -1,0 +1,1 @@
+/bin/gcc -g   CMakeFiles/Clion_sim9Nov.dir/main.c.o  -o Clion_sim9Nov 

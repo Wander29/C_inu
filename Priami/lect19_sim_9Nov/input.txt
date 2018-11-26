@@ -1,0 +1,5 @@
+Pisa                09:00 Lucca 16:00
+Arezzo              08:00 Firenze 10:00
+Siena               13:00 Pisa 18:00
+Lucca               12:00 Firenze 17:00
+Fiesole             13:00 Lucca 14:00

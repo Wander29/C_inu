@@ -1,0 +1,17 @@
+//Richiesta = [determinare il numero di persone malate al tempo k]
+assumendo che 
+
+	-La probabilità di essere infettati è proporzionale al numero di persone malate 
+	-il numero di persone infettate è proporzionale al numero di persone sane
+
+	i[k+1] = i[k] + μ*s[k]*i[k]
+	i[0] = 1
+
+
+
+Assumendo 
+	#numero di persone costante
+	#tempo discreto con incrementi costanti
+
+	$ogni persona ha la stessa probabilità di essere infettata e 
+	$quando infettata, resta infetta. 

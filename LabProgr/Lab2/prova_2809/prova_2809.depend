@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1538122265 source:/home/wander/Desktop/LabProgr/Lab2/prova_2809/main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+

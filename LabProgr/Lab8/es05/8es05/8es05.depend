@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1542909980 source:/run/media/wan/emmc/_work_uni/LabProgr/Lab8/es05/8es05/8es05.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

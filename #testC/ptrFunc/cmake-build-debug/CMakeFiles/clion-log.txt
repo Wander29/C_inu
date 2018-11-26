@@ -1,0 +1,11 @@
+/home/wan/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/182.4892.24/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=/bin/gcc -G "CodeBlocks - Unix Makefiles" /run/media/wan/emmc/_work_uni/_testC/ptrFunc
+-- The C compiler identification is GNU 8.2.1
+-- Check for working C compiler: /bin/gcc
+-- Check for working C compiler: /bin/gcc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /run/media/wan/emmc/_work_uni/_testC/ptrFunc/cmake-build-debug

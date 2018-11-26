@@ -1,0 +1,1 @@
+/bin/gcc -g   CMakeFiles/Lista_Priami.dir/main.c.o  -o Lista_Priami 

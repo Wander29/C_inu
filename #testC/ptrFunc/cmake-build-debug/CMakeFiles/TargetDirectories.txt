@@ -1,0 +1,3 @@
+/run/media/wan/emmc/_work_uni/_testC/ptrFunc/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/run/media/wan/emmc/_work_uni/_testC/ptrFunc/cmake-build-debug/CMakeFiles/edit_cache.dir
+/run/media/wan/emmc/_work_uni/_testC/ptrFunc/cmake-build-debug/CMakeFiles/ptrFunc.dir

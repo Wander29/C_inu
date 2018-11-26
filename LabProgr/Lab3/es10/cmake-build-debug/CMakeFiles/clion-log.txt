@@ -1,0 +1,4 @@
+/bin/clion-2018.2.4/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=/usr/bin/gcc -G "CodeBlocks - Unix Makefiles" /home/wan/Desktop/LabProgr/Lab3/es10
+CMake Error: CMake was unable to find a build program corresponding to "Unix Makefiles".  CMAKE_MAKE_PROGRAM is not set.  You probably need to select a different build tool.
+-- Configuring incomplete, errors occurred!
+See also "/home/wan/Desktop/LabProgr/Lab3/es10/cmake-build-debug/CMakeFiles/CMakeOutput.log".
