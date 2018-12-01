@@ -1,0 +1,100 @@
+CONFIGURAZIONE (solo la 1° volta)
+	3 livelli di file di config:
+	_ /etc/gitconfig = generale, tutte le repo e tutti utenti del pc, accessibile usando '--system' in git config
+	_ ~/.gitconfig = utente, '--global' in git config --> C:/Users/'utente'/.gitconfig
+	_ config file = dentro ogni repo, vale solo per quella, senza opzioni in git config
+Ogni livello sovrascrive quelli precedenti
+
+	_ IDENTITÀ
+	git config --global user.name ""
+	git config --global user.email "@"
+
+	_impostare editor predefinito
+	git config --global core.editor "'D:\Program Files (x86)\Notepad++\notepad++.exe' -multiInst -nosession"
+
+	_Controllare impostazioni
+	git config --list
+
+	_ALIAS COMANDI (accorciarli)
+	git config --gloabl alias.<shortcut> <comando>, es: alias.br branch
+
+_HELP comandi
+	git 'config' -h
+
+##INIZIALIZZARE REPO
+	git init = nella cartella del progetto
+	git add *
+	git commit -m "message..", oopure -v per aggiungere nel commento del commit le differenze di 'diff --staged'
+	git commit -a = senza passare per la stage area, li aggiunge automaticamente
+
+#CLONARE REPO
+	git clone <url>
+
+	#controllare stato file repo
+	git status
+	git status -s : meno info. M=modified, A=added(new files), staged, ? new files not tracked, 2 colonne: staging e working dir
+
+git add = traccia nuovi e file e indicizza quelli modificati (to stage files)
+
+#COMPARAZIONE FILE
+	git diff = mostra le differenze tra file working dir e stage area
+	git diff --staged(/cached, sono sinonimi) = mostra differenze tra stage area e commit
+
+#RIMUOVERE FILES
+	vanno rimossi dalla stage area
+	git rm <file> (-f se presente nella stage area)
+	git rm --cached <file> = cancella il file dalla stage area, non piú tracciato
+
+#RINOMINARE FILES
+	git mv <fileOr> <fileRenamed>
+
+#COMMIT HISTORY
+	git log = tutti i commit, con utente, ora e commento
+		git log -p mostra le differenze
+		git log --stat mostra numero file modificati e quali
+
+#UNDO THINGS
+	git commit --amend : rifa un nuovo commit sovrascrivendo il precedente
+	git reset HEAD <file> : unstage un file
+	git checkout -- <file> : discard changes on file in working dir
+
+***********************************
+#REMOTE REPOSITORY
+	git remote add <shortname><url> = aggiunge la repo remota
+	git fetch <remote>/<shortname utilizzato> = prende tutti i file che non si hanno o sono stati aggiornati, ma li scarica solamente, senza fare il merge con quelli locali, perciò non modifica i file = crea un nuovo commit (es. origin/master)
+	git pull = fetch e merge insieme, solitamente si utilizza con le repo clonate
+	git push <remote> <branch> = carica i file sulla repo remota: si può fare solo dopo che si ha la repo locale aggiornata con 		locale'ultimo update
+
+	git remote rename <old_shortname> <new_shortname> = rinomina lo shortname della repo
+	git remote remove/rm <shortname> = rimuove un remote
+
+	#TAG
+	git tag = mostra i tag
+	git tag -a v1.2 -m "" = aggiunge un annotated tag. Hanno nome, checksum, email, date, comment (ligthweight no)
+		con push non vengono caricati, perciò:
+	git push <tagname> oppure per tutti i tag --tags
+
+###################
+#BRANCH
+	git log --decorate : mostra su quale branch si è e dove punta l'HEAD (puntatore sul local working branch)
+	git branch <name_branch> : crea un branch da quello attuale, senza spostare l'HEAD
+	git checkout <branch> : ci si sposta du quel branch (sposta l'HEAD su di esso e modifica la working dir riportandola allo stato 	del branch in questione, rimuove, modifica e aggiunge file per tornare in quello stato)
+	git checkout -b <branch> = crea un nuovo branch e switcha su esso
+
+	#MERGE di due branch
+	git checkout <branch_che ospiterà il merge>
+	git merge <branch to merge, con le modifche> = nel caso sia un merge diretto fa un fast-forward, ovvero crea un commit, il 			risultato del merge, e sposta il branch (ovvero il puntatore) su questo commit, in avanti. Si deve poi eliminare il branch 		che si mergia, perchè inutile
+	git branch -d <branch> = elimina il branch
+
+	#comandi
+	git branch = mostra i branch presenti, con un asterisco su quello attivo
+	git branch -v = ultimo commit per ogni branch
+
+	#REBASING
+	prendere le modifiche introdotte dal Topic branch rispetto al common ancestor e itrodurle in cima al master branch.
+	git checkout <topic_branch>
+	git rebase <master_branch>
+	
+
+
+
